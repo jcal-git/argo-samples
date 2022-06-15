@@ -5,7 +5,7 @@ metadata:
 spec:
   ports:
   - name: http
-    nodePort: 8900
+    nodePort: 30001
     port: 8900
     protocol: TCP
     targetPort: 8900
