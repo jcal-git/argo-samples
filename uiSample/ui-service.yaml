@@ -6,7 +6,7 @@ spec:
   ports:
   - nodePort: 30001
     port: 8900
-    targetPort: 8090
+    targetPort: 8900
   selector:
     app : pluk-ui
   type: NodePort
