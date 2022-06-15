@@ -8,7 +8,6 @@ spec:
     nodePort: 30001
     port: 8900
     protocol: TCP
-    targetPort: 8900
   selector:
     app.kubernetes.io/name: pluk-ui
   sessionAffinity: None
