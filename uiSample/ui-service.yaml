@@ -4,13 +4,9 @@ metadata:
   name: pluk-ui
 spec:
   ports:
-  - name: http
-    nodePort: 30001
+  - nodePort: 30001
     port: 8900
-    protocol: TCP
+    targetPort: 8090
   selector:
-    app.kubernetes.io/name: pluk-ui
-  sessionAffinity: None
+    app : pluk-ui
   type: NodePort
-status:
-  loadBalancer: {}
