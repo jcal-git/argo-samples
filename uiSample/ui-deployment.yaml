@@ -16,4 +16,4 @@ spec:
       - image: lexlugerb/ltc-ui:11
         name: pluk-ui
         ports:
-        - containerPort: 8090
+        - containerPort: 8900
