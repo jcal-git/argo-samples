@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pluk-ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pluk-ui
+  template:
+    metadata:
+      labels:
+        app: pluk-ui
+    spec:
+      containers:
+      - image: lexlugerb/ltc-ui:11
+        name: pluk-ui
+        ports:
+        - containerPort: 8900
